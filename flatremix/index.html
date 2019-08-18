@@ -3,94 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="flatremix.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/> -->
-    <style>
-
-/* .container {
-            margin: 0 auto;
-            padding: 0 2.0rem;
-            position: relative;
-            width: 100%;
-        }
-        .wrapper.container {
-            max-width: 80rem;
-        } */
-    @media screen and (min-width: 800px) {
-        .container {
-            max-width: 80rem;
-            width: 100%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: minmax(100px, auto);
-        }
-    
-        .container>.navigation {
-            grid-column: 1 / 13;
-            grid-row: 1 / 2;
-        }
-        
-        .container>.menu {
-            grid-column: 1 / 3;
-            grid-row: 2;
-        }
-    
-        .container>.contents {
-            grid-column: 3 / 11;
-            grid-row: 2;
-        }
-        .container>.side {
-            grid-column: 11 / 13;
-            grid-row: 2;
-        }
-    }
-    @media screen and (max-width: 800px) {
-        .container {
-            max-width: 80rem;
-            width: 100%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: minmax(100px, auto);
-        }
-    
-        .container>.navigation {
-            grid-column: 1 / 13;
-            grid-row: 1 / 2;
-        }
-        
-        .container>.menu {
-            grid-column: 2 / 12;
-            grid-row: 2 / 3;
-        }
-    
-        .container>.contents {
-            grid-column: 2 / 12;
-            grid-row: 3;
-        }
-        .container>.side {
-            display: none;
-        }
-    }
-
-    .navigation .title {
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .navigation .items {
-        text-align: center;
-        /* margin-top: 20px;
-    margin-bottom: 10px; */
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
-    }
-    .navigation .items a {
-        padding: 1rem;
-    }
-    </style>
+    <link rel="stylesheet" href="./flatremix.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
@@ -101,44 +15,53 @@
             </h1>
             <div class="items">
                 <a href="" class="">first</a>
-                <a href="" class="">first</a>
+                <a href="" class="">second</a>
+                <a href="" class="">third</a>
             </div>
         </nav>
         <aside class="menu">
             <ul>
-                <li>ss</li>
-                <li>ss</li>
-                <li>ss</li>
-                <li>ss</li>
-                <li>ss</li>
-                <li>ss</li>
+                <li>option1</li>
+                <li>option2</li>
+                <li>option3</li>
+                <li>option4</li>
+                <li>option5</li>
             </ul>
         </aside>
         <div class="contents">
-            <article class="paper">
-                <h3>Heading 3</h3>
+            <section class="paper">
+                <h3>Selectable</h3>
                 <p class="selectable">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tempore quod et ipsum quis itaque ducimus deleniti, minus debitis dolores quos accusamus cum reiciendis libero enim molestias tempora officiis neque?
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic voluptas ullam voluptatibus! Cumque porro eius asperiores optio, nam doloremque voluptas, repellendus, aspernatur quas et dicta odio soluta vel quam laboriosam.
                 </p>
-            </article>
+            </section>
             
+            <section class="paper">
+                <article>
+                    <h3>Heading 3</h3>
+                    <p class="selectable">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore ad atque ipsum quibusdam numquam. Necessitatibus labore tempore quos qui. Distinctio odio veritatis vero asperiores illo aut, doloremque temporibus nesciunt.
+                    </p>
+                </article>
+                <article>
+                    <h3>Heading 3</h3>
+                    <p class="selectable">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore ad atque ipsum quibusdam numquam. Necessitatibus labore tempore quos qui. Distinctio odio veritatis vero asperiores illo aut, doloremque temporibus nesciunt.
+                    </p>
+                </article>
+            </section>
 
-            <article>
-                <h3>Heading 3</h3>
-                <p class="selectable">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore ad atque ipsum quibusdam numquam. Necessitatibus labore tempore quos qui. Distinctio odio veritatis vero asperiores illo aut, doloremque temporibus nesciunt.
-                </p>
-            </article>
-
-            <textarea></textarea>
-            <select>
-                <option>Level 1</option>
-                <option>Level 2</option>
-            </select>                
-            <button class="blue-button">save</button>
-            <button class="red-button">exit</button>
-            
+            <section class="paper">
+                <textarea style="width: 100%"></textarea>
+                <input type="text" style="width: 80%">
+                <select>
+                    <option>Level 1</option>
+                    <option>Level 2</option>
+                </select>    
+                <button class="blue-button">save</button>
+                <button class="red-button">exit</button>
+            </section>
         </div>
         <aside class="side">
             <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus harum ipsa nisi exercitationem cum quia error consequatur earum, laboriosam recusandae, rerum voluptate voluptatem perferendis repudiandae expedita deserunt temporibus. Sunt, eos? -->
